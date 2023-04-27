@@ -40,11 +40,15 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 ```{r}
 basicNN + geom_point() + ggtitle("SIMS vs ARMS") + theme(plot.title = element_text(hjust = 0.5, size = 20))
 ```
-
-
+  
+The data analysed above show the results of a simulation giving data on the strength of workers arms. The expected strength ranges from 50 to 100 within the workers. 
 
 ### Numerical results
-
+```{r}
+cor(SIMS~ARM,data=data)
+```
+  
+The data presented above explains that the larger the number becomes, the more correlated the results end up being. Since the number is approaching 1, we can stipulate that there will be a small correspondence.
 
 ### Inferential  (Build model.1)
 
