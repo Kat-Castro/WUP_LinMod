@@ -51,7 +51,12 @@ cor(SIMS~ARM,data=data)
 The data presented above explains that the larger the number becomes, the more correlated the results end up being. Since the number is approaching 1, we can stipulate that there will be a small correspondence.
 
 ### Inferential  (Build model.1)
-
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+  
+The equation for the line provided by the inferential data is : SIMS=0.054563xARM=-4.095160. This equation proves that the line is increasing from the bottom to the top.
 #### Predict at target point
 
 
