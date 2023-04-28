@@ -110,9 +110,11 @@ predict(model.2, tgtpoint, interval= c("prediction"))
 The table shows us the value for our best fit line which is -0.5361543. While this amount is given, 95% of the time we will have our result range from -3.107961 to 2.035652.
 
 #### now add the model fit to our plot for model.2
+```{r}
+basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
+```    
   
-
-
+The graph presented above gives us the line of best fit which points out that our data carries the most accurate info in SIMS vs GRIP.
 ## Model 3 SIM~ARM+GRIP
 
 ### Numerical results (cor)
