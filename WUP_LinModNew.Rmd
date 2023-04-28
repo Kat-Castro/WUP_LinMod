@@ -95,9 +95,19 @@ cor(SIMS~GRIP,data=data)
 Comparing the given amount of SIMS vs GRIP, 0.6398458, with our other given amount found from SIMS vs ARMS, 0.6860073, we can see a small difference between the two differing sides. This data shows how the SIMS vs ARMS model gives a more accurate reading compared to the SIMS vs GRIP model.
 
 ### Inferential  (Build model.2)
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.1)
+```  
   
+The data provided above gives us the equation: SIMS= 0.045463x GRIP= -4.809675 for the line of best fit. These coefficients prove that the slope will be increasing.
 
 #### predict model.2 at target point
+```{r}
+predict(model.2, tgtpoint, interval= c("prediction"))
+```
+  
+The table shows us the value for our best fit line which is -0.5361543. While this amount is given, 95% of the time we will have our result range from -3.107961 to 2.035652.
 
 #### now add the model fit to our plot for model.2
   
