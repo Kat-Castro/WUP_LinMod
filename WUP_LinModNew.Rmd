@@ -119,7 +119,11 @@ The graph presented above gives us the line of best fit which points out that ou
 
 ### Numerical results (cor)
 
-`
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+  
+The value provided shows we have a 0.7326545 correlation for SIMS vs ARMS+GRIP. This value shows a higher difference when looking at both SIMS vs ARMS and SIMS vs GRIP. This has become the most accurate model when loooking at both data sets together rather than separate.
   
 ### Inferential  (Build 2-dimentional model.3)
 
