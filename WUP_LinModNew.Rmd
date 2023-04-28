@@ -154,7 +154,11 @@ The model 1.3 shows more accurate data compared to model 1.1. The two models sha
 anova(model.2,model.3)
 ```
   
-In this data table, we can observe how model 1.3 has proven to be more accurate compared to model 1.2. There are no difference between the two models leaving a 0.00000000001495% chance of ending up with the same results. Looking at the degree of freedom, we can see that 1.2 model had 145 while model 1.3 had a 144. The difference of 54.639 in errors will make model 1.3 more accruate in total.
+In this data table, we can observe how model 1.3 has proven to be more accurate compared to model 1.2. There are no difference between the two models leaving a 0.00000000001495% chance of ending up with the same results. Looking at the degree of freedom, we can see that 1.2 model had 145 while model 1.3 had a 144. The difference of 54.639 in errors will make model 1.3 more accurate in total.
 
 ## Informally compare Model.1 with model.2
-
+```{r}
+anova(model.1,model.2)
+```
+  
+The model presented above shows that model.1 carries a residual sum of squares at 217.88 while model.2 carried a 243.07. The calculated difference of -25.189 shows that model.1 gives a more definite answer.
