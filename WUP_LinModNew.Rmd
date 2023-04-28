@@ -88,7 +88,11 @@ basicGRIP + geom_point() + ggtitle ("SIMS vs GRIP") + theme(plot.title = element
 
 
 ### Numerical results 
-
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+  
+Comparing the given amount of SIMS vs GRIP, 0.6398458, with our other given amount found from SIMS vs ARMS, 0.6860073, we can see a small difference between the two differing sides. This data shows how the SIMS vs ARMS model gives a more accurate reading compared to the SIMS vs GRIP model.
 
 ### Inferential  (Build model.2)
   
